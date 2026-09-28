@@ -1,7 +1,12 @@
 <script>
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
+	import Width21 from '$lib/layout/width21.svelte';
+	let { data } = $props();
 </script>
 
-<Breadcrumb />
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<Width21>
+	<h1>hello</h1>
+	{#snippet sidebar()}
+		<h1>Sidebar</h1>
+	{/snippet}
+</Width21>

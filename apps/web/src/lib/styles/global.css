@@ -13,7 +13,7 @@ body {
 	font-family: 'Red Hat Text', sans-serif;
 	font-size: 16px;
 	line-height: 20px;
-	background-color: #1e2727;
+	background-color: #181d1d;
 	color: #f5f6fa;
 }
 
@@ -22,6 +22,7 @@ h1 {
 	font-weight: 700;
 	font-size: 2rem;
 	line-height: 2.5rem;
+	margin-block: 0 1rem;
 }
 
 p {
@@ -29,6 +30,7 @@ p {
 	font-weight: 400;
 	font-size: 1rem;
 	line-height: 1.5rem;
+	margin-block: 0 0.75rem;
 }
 
 .nav-link {

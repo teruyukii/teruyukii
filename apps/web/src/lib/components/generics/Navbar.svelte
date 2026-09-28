@@ -10,7 +10,7 @@
 	let isOpen = $state(false);
 </script>
 
-<nav class="sticky top-0 z-50 flex bg-[#1e2727]">
+<nav class="sticky top-0 z-50 flex bg-[#181D1D]">
 	<div class="flex w-full items-center justify-between px-8 py-4">
 		<a href="/" class="flex items-center gap-2 font-display text-lg font-bold"
 			><img src={favicon} alt="My App Logo" class="logo h-4 w-4" />teruyuki</a
