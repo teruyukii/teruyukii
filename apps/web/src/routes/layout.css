@@ -1,2 +1,31 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
+
+@theme {
+	--font-mono: 'Red Hat Mono', monospace;
+}
+
+@theme {
+	--font-display: 'Red Hat Display', sans-serif;
+}
+
+body {
+	font-family: 'Red Hat Text', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	background-color: #fafaf9;
+}
+
+h1 {
+	font-family: var(--font-display);
+	font-weight: 700;
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+
+p {
+	font-family: 'Red Hat Text', sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
