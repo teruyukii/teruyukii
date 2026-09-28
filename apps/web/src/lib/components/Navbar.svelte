@@ -2,13 +2,29 @@
 	import '$lib/styles/global.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import OutsideLink from '$lib/assets/icons/OutsideLink.svelte';
+	import Hamburger from '$lib/assets/icons/Hamburger.svelte';
+
+	function log(message: string) {
+		console.log(message);
+	}
+	let isOpen = $state(false);
 </script>
 
 <nav class="flex w-full items-center justify-between px-8 py-4">
 	<a href="/" class="flex items-center gap-2 font-display text-lg font-bold"
 		><img src={favicon} alt="My App Logo" class="logo h-4 w-4" />teruyuki</a
 	>
-	<div class="flex items-center gap-6">
+	<button
+		onclick={() => {
+			isOpen = !isOpen;
+			log(isOpen ? 'Menu opened' : 'Menu closed');
+		}}
+		class="md:hidden"
+	>
+		<Hamburger />
+	</button>
+
+	<div class="hidden items-center gap-6 md:flex">
 		<a href="/" class="logo">stories</a>
 		<a href="/about" class="nav-link">works</a>
 		<a href="/contact" class="nav-link">me</a>
@@ -16,3 +32,11 @@
 		<a href="/contact" class="nav-link flex items-center gap-1">linkedIn<OutsideLink /></a>
 	</div>
 </nav>
+
+{#if isOpen}
+	<div class="min-h-screen">
+		<a href="/" class="nav-link">stories</a>
+		<a href="/about" class="nav-link">works</a>
+		<a href="/contact" class="nav-link">me</a>
+	</div>
+{/if}
