@@ -1,7 +1,5 @@
 <script>
-	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
-	import Width21 from '$lib/layout/width21.svelte';
-	let { data } = $props();
+	import Width21 from '$lib/layout/Width21.svelte';
 </script>
 
 <Width21>
