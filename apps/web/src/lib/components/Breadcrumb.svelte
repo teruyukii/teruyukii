@@ -4,13 +4,20 @@
 
 <div class="breadcrumb flex items-center gap-3 pb-6 font-display font-semibold">
 	<a
-		href="/"
-		class="hover:opacity-100 {($page.url.pathname as string) == '/' ? 'opacity-100' : 'opacity-50'}"
-		>Contribution</a
+		href="/about/me"
+		class="hover:opacity-100 md:hidden {($page.url.pathname as string) == '/about'
+			? 'opacity-100'
+			: 'opacity-50'}">About me</a
 	>
 	<a
-		href="/about"
-		class="hover:opacity-100 {($page.url.pathname as string) == '/about'
+		href="/about/contribution"
+		class="hover:opacity-100 {($page.url.pathname as string) == '/about/contribution'
+			? 'opacity-100'
+			: 'opacity-50'}">Contribution</a
+	>
+	<a
+		href="/about/certificates"
+		class="hover:opacity-100 {($page.url.pathname as string) == '/about/certificates'
 			? 'opacity-100'
 			: 'opacity-50'}">Centificates</a
 	>

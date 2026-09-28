@@ -1,10 +1,11 @@
 <script>
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
+	import Width21 from '$lib/layout/Width21.svelte';
 </script>
 
-<div class="flex h-fit min-h-dvh w-full items-start">
-	<section class="flex-co flex w-full max-w-2/3"><Breadcrumb /></section>
-	<div class="flex w-full max-w-1/3 flex-col">
+<Width21>
+	<Breadcrumb />
+	{#snippet sidebar()}
 		<h1>Teruyuki Saito</h1>
 		<p>
 			Coding excites me because it allows me to bring creative ideas to life while maintaining
@@ -15,5 +16,14 @@
 			card game. I’m also an active member of the Bangkok Karuta Club, where I get to engage with
 			others who share this interest.
 		</p>
-	</div>
-</div>
+		<p>
+			Additionally, I have a growing interest in religious studies and philosophy, particularly
+			Buddhist philosophy. I plan to include topics related to philosophy on this site, so you can
+			get to know me better and see the various aspects of who I am.
+		</p>
+		<p>
+			I’m always eager to explore new opportunities for learning and personal growth, so feel free
+			to reach out to me anytime!
+		</p>
+	{/snippet}
+</Width21>
