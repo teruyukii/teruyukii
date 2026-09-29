@@ -21,10 +21,4 @@
 			? 'opacity-100'
 			: 'opacity-50'}">Centificates</a
 	>
-	<a
-		href="/about/team"
-		class="hover:opacity-100 {($page.url.pathname as string) == '/about/team'
-			? 'opacity-100'
-			: 'opacity-50'}">Team</a
-	>
 </div>
