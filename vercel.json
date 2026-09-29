@@ -3,7 +3,7 @@
   "services": {
     "api": {
       "root": "apps/api",
-      "runtime": "go"
+      "framework": "go"
     },
     "web": {
       "root": "apps/web",
