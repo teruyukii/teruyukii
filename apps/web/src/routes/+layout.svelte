@@ -6,7 +6,11 @@
 	import { env } from '$env/dynamic/public';
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head
+	><link href={favicon} rel="icon" />
+	<title>Teruyuki Saito – Personal Blog</title>
+	<meta content="Hello, it's Teru (Teruyuki Saito)" name="description" />
+</svelte:head>
 {#if env.PUBLIC_MAINTENANCE_PAGE === 'true'}
 	<div class="flex min-h-screen flex-col items-center justify-center p-4 text-center">
 		<img src={favicon} alt="Favicon" class="mb-4 h-16 w-16" />
