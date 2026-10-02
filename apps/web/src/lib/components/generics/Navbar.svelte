@@ -10,27 +10,31 @@
 	let isOpen = $state(false);
 </script>
 
-<nav class="sticky top-0 z-50 flex bg-[#181D1D]">
+<nav class="sticky top-0 z-50 flex bg-[#f5f5f5]">
 	<div class="flex w-full items-center justify-between px-4 py-4 md:px-8">
-		<a href="/" class="flex items-center gap-2 font-display text-lg font-bold"
-			><img src={favicon} alt="My App Logo" class="logo h-4 w-4" />teruyuki</a
+		<a class="flex items-center gap-2 font-display text-lg font-bold" href="/"
+			><img alt="My App Logo" class="logo h-4 w-4" src={favicon} />teruyuki</a
 		>
 		<button
+			class="md:hidden"
 			onclick={() => {
 				isOpen = !isOpen;
 				log(isOpen ? 'Menu opened' : 'Menu closed');
 			}}
-			class="md:hidden"
 		>
 			<Hamburger />
 		</button>
 
 		<div class="hidden items-center gap-6 md:flex">
-			<a href="/" class="logo">stories</a>
-			<a href="/about" class="nav-link">works</a>
-			<a href="/contact" class="nav-link">me</a>
-			<a href="/contact" class="nav-link flex gap-1">github<OutsideLink /></a>
-			<a href="/contact" class="nav-link flex items-center gap-1">linkedIn<OutsideLink /></a>
+			<a class="logo" href="/">stories</a>
+			<a class="nav-link" href="/about">works</a>
+			<a class="nav-link" href="/contact">me</a>
+			<a class="nav-link flex items-center gap-1" href="/contact"
+				>github<OutsideLink color="#2f2f2f" /></a
+			>
+			<a class="nav-link flex items-center gap-1" href="/contact"
+				>linkedIn<OutsideLink color="#2f2f2f" /></a
+			>
 		</div>
 	</div>
 </nav>
