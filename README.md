@@ -1,4 +1,16 @@
-## Hi, I'm Teruyuki Saito 👋
+<h2>
+  <picture style="vertical-align: middle;">
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hello-w.svg">
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hello-b.svg">
+    <img
+      alt="Project Logo"
+      src="./assets/hello-b.svg"
+      height="32"
+      style="vertical-align: middle;"
+    >
+  </picture>
+  <span style="vertical-align: middle;">👋</span>
+</h2>
 
 I'm a software engineer based in Bangkok, Thailand, focused on backend and full-stack development.
 
